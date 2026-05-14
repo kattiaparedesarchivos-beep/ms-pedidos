@@ -1,0 +1,81 @@
+# ms-pedidos
+
+## 📌 Descripción
+Microservicio encargado de la gestión de pedidos dentro de una plataforma de ventas.
+Permite registrar, listar, buscar, actualizar estado y eliminar pedidos de clientes.
+
+Cada pedido almacena información del cliente, producto solicitado, cantidad, precio unitario y el total calculado en el backend.
+
+---
+
+## 🧰 Tecnologías utilizadas
+
+- Java 17 / 21
+- Spring Boot
+- Spring Web
+- Spring Data JPA
+- PostgreSQL (Neon)
+- Hibernate
+- Validation
+- Maven
+
+---
+
+## 🏗 Arquitectura del proyecto
+
+El microservicio está organizado en capas:
+
+- controller
+- service
+- repository
+- entity
+- dto
+- exception (opcional / futura mejora)
+
+---
+
+## 📦 Entidad principal
+
+### Pedido
+
+- id (Long)
+- cliente (String)
+- correoCliente (String)
+- productoId (Long)
+- nombreProducto (String)
+- cantidad (Integer)
+- precioUnitario (BigDecimal)
+- total (BigDecimal) → calculado en backend
+- estado (String)
+- fechaPedido (LocalDateTime)
+
+---
+
+## 🔥 Reglas de negocio
+
+- El campo `total` se calcula en el backend:
+
+  total = cantidad × precioUnitario
+
+- El estado inicial del pedido es:
+
+  REGISTRADO
+
+- El cliente no puede enviar el total desde el request.
+
+---
+
+## 🌐 Endpoints disponibles
+
+### 📌 Crear pedido
+POST `/api/pedidos`
+
+```json
+{
+  "cliente": "Juan Pérez",
+  "correoCliente": "juan@email.com",
+  "productoId": 1,
+  "nombreProducto": "Laptop Lenovo",
+  "cantidad": 2,
+  "precioUnitario": 3500.00
+}
