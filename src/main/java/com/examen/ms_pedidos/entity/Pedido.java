@@ -1,4 +1,4 @@
-package com.examen.pedidos.entity;
+package com.examen.ms_pedidos.entity;
 
 import jakarta.persistence.*;
 import lombok.*;

@@ -1,4 +1,4 @@
-package com.examen.pedidos.dto;
+package com.examen.ms_pedidos.dto;
 
 import jakarta.validation.constraints.*;
 import lombok.Data;

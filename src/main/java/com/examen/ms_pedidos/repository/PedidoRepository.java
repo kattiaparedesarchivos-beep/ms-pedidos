@@ -1,6 +1,6 @@
-package com.examen.pedidos.repository;
+package com.examen.ms_pedidos.repository;
 
-import com.examen.pedidos.entity.Pedido;
+import com.examen.ms_pedidos.entity.Pedido;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

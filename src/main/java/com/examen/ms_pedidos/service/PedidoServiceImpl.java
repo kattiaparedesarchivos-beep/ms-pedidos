@@ -1,8 +1,8 @@
-package com.examen.pedidos.service;
+package com.examen.ms_pedidos.service;
 
-import com.examen.pedidos.dto.PedidoRequestDTO;
-import com.examen.pedidos.entity.Pedido;
-import com.examen.pedidos.repository.PedidoRepository;
+import com.examen.ms_pedidos.dto.PedidoRequestDTO;
+import com.examen.ms_pedidos.entity.Pedido;
+import com.examen.ms_pedidos.repository.PedidoRepository;
 import org.springframework.stereotype.Service;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;

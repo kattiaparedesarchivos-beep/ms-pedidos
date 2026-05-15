@@ -1,8 +1,8 @@
-package com.examen.pedidos.controller;
+package com.examen.ms_pedidos.controller;
 
-import com.examen.pedidos.dto.PedidoRequestDTO;
-import com.examen.pedidos.entity.Pedido;
-import com.examen.pedidos.service.PedidoService;
+import com.examen.ms_pedidos.dto.PedidoRequestDTO;
+import com.examen.ms_pedidos.entity.Pedido;
+import com.examen.ms_pedidos.service.PedidoService;
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
